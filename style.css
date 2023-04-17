@@ -1,0 +1,29 @@
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+
+/* 
+  To add style to a set of tags do something like this: 
+*/
+
+body {
+
+/* 
+  The margins below add some space around your body tag, try playing around with them to see what happens. 
+*/
+  margin-left: 64px;  /* Optional! Try replacing px with 10% */
+  margin-right:64px;
+  margin-top:64px; 
+
+  
+  background-color: pink;
+  
+}
