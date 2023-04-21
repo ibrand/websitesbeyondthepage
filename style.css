@@ -6,24 +6,187 @@
 */
 
 /* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
 
 /* 
   To add style to a set of tags do something like this: 
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&family=Nova+Round&display=swap');
 
 body {
 
 /* 
   The margins below add some space around your body tag, try playing around with them to see what happens. 
 */
-  margin-left: 64px;  /* Optional! Try replacing px with 10% */
-  margin-right:64px;
-  margin-top:64px; 
+color: lightgray; 
+  background-color: #3c0d86;
+  font-family:sans-serif;
+}
 
+#pageGrid {
+  margin-top: 56px; 
+  display: grid;
+  grid-template-columns: minmax(24px,1fr) minmax(200px,800px) minmax(24px,1fr);
+  grid-template-rows: auto 1fr;
+  z-index: 5; 
+  grid-row-gap: 48px; 
   
-  background-color: pink;
+
+}
+
+a {
+  color: lightgrey; 
+}
+#header {
+grid-row: 1; 
+grid-column: 2; 
+font-size: 32px;
+font-family:"Nova Round", 'Times New Roman', Times, serif;
+text-align: center;
+
+margin-top:48px;
+}
+
+
+.session {
+  font-size: 24px; 
+  font-weight: 600;
+  font-family: "Nova Round";
+  margin-bottom: 120px; 
+}
+#list {
+  /* grid-row:2;  */
+  grid-column:2; 
+  line-height: 210%;
   
+}
+
+#frames {
+  opacity:25%;
+  z-index: -5; 
+  position: absolute;
+  min-width: 600px; 
+}
+
+.student {
+
+ padding:24px; 
+ margin: 8px;
+ border-radius: 4px;
+ border-width: 1px; 
+ border-color: rgb(141, 228, 237);
+ border-style: solid; 
+}
+.student > span  {
+  display:block;
+  margin-bottom: 12px; 
+}
+.social {
+  margin-right:4px; 
+  
+}
+
+
+.author {
+  font-size: 16px; 
+  text-align: center; 
+  margin-bottom: 0px; 
+}
+
+.social {
+  display: inline;
+  font-size: 15px; 
+}
+.web-image {
+width: 100%; 
+border-radius: 3px;
+
+}
+.webpage {
+  display:block; 
+  font-size: 20px; 
+  margin-top: 2px; 
+  margin-bottom: 8px; 
+  font-weight:700; 
+  text-align: center;
+}
+
+
+#studentblock {
+
+  display: grid; 
+
+  grid-column: 2; 
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  grid-column-gap: 24px;
+}
+
+section {
+  grid-column: 2;
+  
+}
+.ig-icon {
+  width:12px; 
+  margin-left: 4px; 
+  margin-right:4px; 
+  padding-top: 6px; 
+  fill: white; 
+}
+p {
+  line-height: 180%;
+  font-size: 18px; 
+
+}
+
+#logo-header {
+  position: absolute;
+  top:36px; 
+  margin-bottom: 64px;
+}
+
+#page1 {
+  position: absolute;
+  left: 50vw; 
+  width:50px;
+  transform: rotate(-10deg)
+}
+
+#page2 {
+  position: absolute;
+  left: calc(50vw - 35px); 
+  width:50px;
+  transform: rotate(10deg)
+}
+
+@keyframes opacity-loop1 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes opacity-loop2 {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+#page2 {
+  animation: opacity-loop1 3s ease-in-out infinite;
+}
+
+#page1 {
+  animation: opacity-loop2 3s ease-in-out  infinite;
 }
