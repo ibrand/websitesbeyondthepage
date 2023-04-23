@@ -149,6 +149,7 @@ border-radius: 3px;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   grid-column-gap: 24px;
+  grid-row-gap: 24px; 
 }
 
 section {
