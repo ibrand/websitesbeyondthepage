@@ -21,13 +21,16 @@ body {
 /* 
   The margins below add some space around your body tag, try playing around with them to see what happens. 
 */
-color: lightgray; 
+color: #d1ecee;
   background-color: #3c0eb6;
   font-family:sans-serif;
 }
 
+.teacher {
+  font-weight: 600; 
+}
 #pageGrid {
-  margin-top: 56px; 
+  margin-top: 64px; 
   display: grid;
   grid-template-columns: minmax(24px,1fr) minmax(200px,800px) minmax(24px,1fr);
   grid-template-rows: auto 1fr;
@@ -43,10 +46,10 @@ a {
 #header {
 grid-row: 1; 
 grid-column: 2; 
-font-size: 28px;
+font-size: 30px;
 font-family:"Nova Round", 'Times New Roman', Times, serif;
 text-align: center;
-color: #b4eaf0;
+color: #d1ecee;
 margin-top:48px;
 }
 
