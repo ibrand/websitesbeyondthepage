@@ -12,6 +12,8 @@
 */
 
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Nova+Flat&family=Nova+Round&display=swap');
 
 body {
@@ -20,7 +22,7 @@ body {
   The margins below add some space around your body tag, try playing around with them to see what happens. 
 */
 color: lightgray; 
-  background-color: #3c0d86;
+  background-color: #3c0eb6;
   font-family:sans-serif;
 }
 
@@ -54,6 +56,8 @@ margin-top:48px;
   font-weight: 600;
   font-family: "Nova Round";
   margin-bottom: 120px; 
+  margin: auto;
+  d
 }
 #list {
   /* grid-row:2;  */
@@ -68,47 +72,53 @@ margin-top:48px;
   z-index: -5; 
   position: absolute;
   min-width: 600px; 
+  top: 30vh;
+  right: 15vh; 
 }
+
 
 .student {
 
  padding:24px; 
  margin: 8px;
  border-radius: 4px;
- border-width: 1px; 
- border-color: rgb(141, 228, 237);
- border-style: solid; 
+ outline: 1px; 
+ outline: #8de4ed;
+ outline: solid; 
+ box-sizing: content-box;
 }
 
-.student:hover {
-  background-color: rgb(189, 159, 255); 
-  border-color: blueviolet;
-}
+
 .student > span  {
   display:block;
   margin-bottom: 12px; 
 }
-.social {
-  margin-right:4px; 
-  
-}
-
 
 .author {
-  font-size: 16px; 
+  font-size: 20px; 
   text-align: center; 
-  padding-bottom: 12px; 
+  padding-bottom: 24px; 
+  width:100%; 
+ 
+}
+
+.socialblock {
+  display: flex; 
+  align-items: center;
+  margin-top:16px; 
+  font-size:14px; 
 }
 
 .social {
-  display: inline;
-  font-size: 15px; 
+  display: inline-block;
+  margin-right:4px; 
 }
+
 .web-image {
 width: 100%; 
 border-radius: 3px;
-
 }
+
 .webpage {
   display:block; 
   font-size: 32px; 
@@ -126,9 +136,14 @@ border-radius: 3px;
 
   display: grid; 
 
+  margin-left: 24px; 
+  margin-right: 24px;
   grid-column: 2; 
+
+
+/* setting up student grid*/
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   grid-column-gap: 24px;
 }
 
@@ -138,15 +153,15 @@ section {
 }
 .ig-icon {
   width:12px; 
-  margin-left: 4px; 
+  
   margin-right:4px; 
-  padding-top: 6px; 
   fill: white; 
 }
-p {
+p
+ {
   line-height: 180%;
   font-size: 18px; 
-
+ 
 }
 
 #logo-header {
@@ -199,4 +214,19 @@ p {
 
 #page1 {
   animation: opacity-loop2 3s ease-in-out  infinite;
+}
+
+@media (max-width: 480px) {
+  #frames {
+  
+    width: 200%;
+  
+  }
+  .socialblock {
+    flex-wrap: wrap;
+    line-height: 140%; 
+  }
+  .ornament {
+    display: none; 
+  }
 }
