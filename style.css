@@ -41,7 +41,7 @@ color: #d1ecee;
 }
 
 a {
-  color: lightgrey; 
+  color: #d1ecee; 
 }
 #header {
 grid-row: 1; 
@@ -177,7 +177,7 @@ p
 
 #page1 {
   position: absolute;
-  left: 50vw; 
+  left: calc(50vw - 10px); 
   width:50px;
   /* transform: rotate(-10deg) */
   transform: skew(-2deg) rotate(2deg);
@@ -186,7 +186,7 @@ p
 #page2 {
   
   position: absolute;
-  left: calc(50vw - 36px); 
+  left: calc(50vw - 50px); 
   /* top: 10px;  */
   width:50px;
 
